@@ -1,0 +1,6 @@
+.header {
+  background: url($path--rel+'/img-hero-image.png'), $dark-sage;
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: auto;
+}

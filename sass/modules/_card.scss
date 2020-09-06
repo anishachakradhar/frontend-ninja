@@ -1,0 +1,59 @@
+.card {
+  color: $white;
+  font-family: $roboto;
+  padding: 50px 30px 50px 30px;
+  text-align: center;
+
+  @include e(header) {
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  @include e(body) {
+    color: rgba($white, 0.7);
+    font-size: 9px;
+    padding: 10px 35px;
+    line-height: 1.4;
+  }
+
+  @include e(footer) {
+    margin-top: 10px;
+  }
+
+  @include e(button) {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include mq(xs) {
+    @include e(header) {
+      font-size: 28px;
+    }
+
+    @include e(body) {
+      font-size: 11px;
+      padding: 13px 55px;
+    }
+
+    @include e(footer) {
+      margin-top: 13px;
+    }
+
+  }
+
+  @include mq(sm) {
+    @include e(header) {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    @include e(body) {
+      font-size: 13px;
+      padding: 18px 90px;
+    }
+
+    @include e(footer) {
+      margin-top: 17px;
+    }
+  }
+}

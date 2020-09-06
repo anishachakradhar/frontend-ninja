@@ -1,0 +1,21 @@
+.button {
+  padding: 10px 15px;
+  font-size: 9px;
+  border: none;
+  border-radius: 4px;
+  background-color: $jade-green;
+  color: $white;
+  display: flex;
+  align-items: center;
+  
+  @include e(arrow) {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+  }
+
+  @include mq(xs) {
+    // box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
+    font-size: 9px;
+  }
+}

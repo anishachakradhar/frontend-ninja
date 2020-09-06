@@ -1,0 +1,134 @@
+.wrapper {
+  margin: 40px 0px 30px 0px;
+  font-family: $roboto;
+  text-align: center;
+
+  @include e(title) {
+    color: $warm-grey;
+    font-size: 18px;
+  }
+
+  @include e(card) {
+    padding: 0px 30px;
+    margin-top: 25px;
+  }
+
+  @include e(image) {
+    width: 260px;
+    margin: -2px;
+  }
+  
+  @include e(text) {
+    margin-top: 20px;
+  }
+  
+  @include e(heading) {
+    color: $jade-green;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+  @include e(desc) {
+    margin-top: 9px;
+    color: $text-grey;
+    font-size: 10px;
+    line-height: 1.57;
+  }
+  
+  @include e(link-group) {
+    text-align: left;
+    font-size: 12px;
+  }
+  
+  @include e(link-item) {
+    margin: 10px 0px;
+    border-bottom: 1px solid rgba($line-green, 0.2);
+    padding-bottom: 15px;
+    line-height: 1.57;
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  @include e(link) {
+    color: $jade-green;
+  }
+
+  @include e(link-icon) {
+    width: 12px;
+    margin-right: 4px;
+  }
+
+  @include e(date) {
+    color: rgba($warm-grey, 0.5);
+    margin-top: 4px;
+    font-size: 9px;
+  }
+
+  @include e(ninja-icon) {
+    width: 24px;
+  }
+
+  @include e(hr-separator) {
+    border-top: 1px solid $line-green;
+    width: 45px;
+    margin: 0px 12px;
+  }
+
+  @include e(separator) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include e(sub-title) {
+    color: $warm-grey;
+    font-size: 9px;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  @include e(provide-card) {
+    padding: 0px 30px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: start;
+  }
+
+  @include e(provide-icon) {
+    @include m(left) {
+      width: 22px;
+    }
+  }
+
+  @include e(provide-text) {
+    margin-left: 14px;
+    text-align: left;
+  }
+
+  @include e(provide-title) {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  @include e(provide-desc) {
+    color: rgba($white, 0.5);
+    font-size: 9px;
+    line-height: 1.57;
+    margin-top: 10px;
+  }
+
+  @include e(button) {
+    margin: 35px 0px;
+  }
+}
+
+.wrapper-brown {
+  padding: 40px 0px 30px 0px;
+  font-family: $roboto;
+  text-align: center;
+  background-color: $brown;
+  margin-top: -32px;
+}

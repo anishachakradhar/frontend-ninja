@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 0px 30px;
+
+  @include e(logo) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include e(group) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include e(item) {
+    display: none;
+
+    @include m(active) {
+      display: none;
+    }
+  }
+
+  @include e(menu) {
+    color: $white;
+  }
+
+  @include mq(sm) {
+    
+    padding: 51px 60px 0px 60px;
+
+    @include e(item) {
+      display: block;
+      font-family: $roboto;
+      font-size: 16px;
+      margin: 0px 20px;
+      color: rgba(#ffffff,0.7);
+  
+      @include m(active) {
+        display: block;
+        font-family: $roboto;
+        font-size: 16px;
+        margin: 0px 20px;
+        color: $green;
+      }
+    }
+
+    @include e(menu) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  
+  object-fit: contain;
+
+  @include e(image) {
+    width: 100px;
+    height: 26px;
+  }
+
+  @include mq(sm) {
+    @include e(image) {
+      width: 121px;
+      height: 35px;
+    }
+  }
+}

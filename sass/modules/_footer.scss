@@ -1,0 +1,22 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  font-family: $roboto;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 22px;
+  font-size: 8px;
+
+  @include e(link-group) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include e(link-item) {
+    text-transform: uppercase;
+    margin: 0px 5px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
