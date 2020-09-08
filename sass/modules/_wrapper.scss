@@ -56,7 +56,7 @@
 
   @include e(link-icon) {
     width: 12px;
-    margin-right: 4px;
+    margin-right: 5px;
   }
 
   @include e(date) {
@@ -123,6 +123,65 @@
   @include e(button) {
     margin: 35px 0px;
   }
+
+
+  @include mq(xs) {
+
+    @include e(title) {
+      font-size: 23px;
+    }
+
+    @include e(image) {
+      width: 369px;
+    }
+
+    @include e(heading) {
+      font-size: 14px;
+    }
+
+    @include e(desc) {
+      font-size: 11px;
+    }
+  }
+
+  @include mq(sm) {
+
+    @include e(desc) {
+      padding: 0px 70px;
+    }
+  }
+
+  @include mq(md) {
+
+    @include e(body) {
+      display: flex;
+      justify-content: space-around;
+      div.card:nth-child(2) {
+        padding: 0px;
+      }
+    }
+
+    @include e(image) {
+      width: 213px;
+    }
+
+    @include e(desc) {
+      padding: 0px 4px;
+    }
+
+    @include e(divider) {
+      height: 200px;
+      border: 1px solid $line-green;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
+.resources-link {
+  display: flex;
+  align-items: center;
 }
 
 .wrapper-brown {
@@ -131,4 +190,10 @@
   text-align: center;
   background-color: $brown;
   margin-top: -32px;
+}
+
+.second-wrapper {
+  @include mq(md) {
+    display: flex;
+  }
 }
