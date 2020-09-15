@@ -39,7 +39,6 @@
       font-family: $roboto;
       font-size: 14px;
       margin: 0px 20px;
-      color: rgba(#ffffff,0.7);
       &:last-child {
         margin-right: 0px;
       }
@@ -49,6 +48,14 @@
         font-family: $roboto;
         font-size: 14px;
         margin: 0px 20px;
+        color: $green;
+      }
+    }
+
+    @include e(link) {
+      color: rgba(#ffffff,0.7);
+      
+      @include m(active) {
         color: $green;
       }
     }
