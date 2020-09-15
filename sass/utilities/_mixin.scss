@@ -46,6 +46,11 @@
       @content;
     }
   }
+  @else if $break == "xxl" {// High res desktop and TVs
+    @media(min-width: $xxl-device){
+      @content;
+    }
+  }
   @else {
     @error "No value could be retrieved for '#{$break}'";
   }

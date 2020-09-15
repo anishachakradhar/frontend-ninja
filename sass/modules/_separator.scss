@@ -1,0 +1,40 @@
+.separator {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include e(ninja-icon) {
+    width: 24px;
+  }
+
+  @include e(hr) {
+    border-top: 1px solid $line-green;
+    width: 45px;
+    margin: 0px 12px;
+  }
+
+  @include mq(lg) {
+
+    padding: 60px;
+
+    @include e(ninja-icon) {
+      width: 40px;
+    }
+  
+    @include e(hr) {
+      width: 85px;
+    }
+  }
+
+  @include mq(xl) {
+    
+    @include e(ninja-icon) {
+      width: 45px;
+    }
+  
+    @include e(hr) {
+      width: 100px;
+    }
+  }
+}

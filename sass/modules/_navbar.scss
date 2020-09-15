@@ -26,6 +26,10 @@
     color: $white;
   }
 
+  @include e(icon) {
+    width: 14px;
+  }
+
   @include mq(sm) {
     
     padding: 51px 60px 0px 60px;
@@ -33,14 +37,17 @@
     @include e(item) {
       display: block;
       font-family: $roboto;
-      font-size: 16px;
+      font-size: 14px;
       margin: 0px 20px;
       color: rgba(#ffffff,0.7);
+      &:last-child {
+        margin-right: 0px;
+      }
   
       @include m(active) {
         display: block;
         font-family: $roboto;
-        font-size: 16px;
+        font-size: 14px;
         margin: 0px 20px;
         color: $green;
       }

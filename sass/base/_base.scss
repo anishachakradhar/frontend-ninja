@@ -18,3 +18,9 @@ body {
 a {
   text-decoration: none;
 }
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}

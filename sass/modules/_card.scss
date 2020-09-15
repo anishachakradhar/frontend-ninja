@@ -1,8 +1,11 @@
 .card {
-  color: $white;
-  font-family: $roboto;
-  padding: 50px 30px 50px 30px;
-  text-align: center;
+
+  @include e(container) {
+    color: $white;
+    font-family: $roboto;
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+  }
 
   @include e(header) {
     font-size: 23px;
@@ -42,18 +45,64 @@
   }
 
   @include mq(sm) {
+
+    @include e(container) {
+      padding: 70px 30px 65px 30px;
+    }
+
     @include e(header) {
-      font-size: 35px;
-      font-weight: bold;
+      font-size: 42px;
     }
 
     @include e(body) {
       font-size: 13px;
-      padding: 18px 90px;
+      padding: 18px 140px;
     }
 
     @include e(footer) {
       margin-top: 17px;
+    }
+  }
+
+  @include mq(lg) {
+
+    @include e(container) {
+      padding: 175px 30px 120px 30px;
+    }
+    
+    @include e(header) {
+      font-size: 55px;
+    }
+
+    @include e(body) {
+      font-size: 17px;
+      padding: 20px 205px 15px 205px;
+    }
+  }
+
+  @include mq(xl) {
+
+    @include e(container) {
+      padding: 230px 30px 150px 30px;
+    }
+    
+    @include e(header) {
+      font-size: 65px;
+    }
+
+    @include e(body) {
+      padding: 20px 26em;
+    }
+  }
+
+  @include mq(xxl) {
+
+    @include e(header) {
+      font-size: 80px;
+    }
+
+    @include e(body) {
+      padding: 25px 39em;
     }
   }
 }

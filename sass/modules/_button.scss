@@ -9,13 +9,27 @@
   align-items: center;
   
   @include e(arrow) {
-    width: 10px;
     height: 10px;
     margin-left: 5px;
   }
 
   @include mq(xs) {
-    // box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.4);
     font-size: 9px;
   }
+
+  @include mq(md) {
+    font-size: 10px;
+  }
+
+  @include mq(lg) {
+    font-size: 14px;
+    padding: 18px 30px;
+
+    @include e(arrow) {
+      height: 14px;
+      margin-left: 13px;
+    }
+  }
+
 }

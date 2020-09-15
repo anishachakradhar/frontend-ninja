@@ -1,0 +1,154 @@
+.benefits {
+
+  @include e(container) {
+    padding: 40px 30px 20px 30px;
+    text-align: center;
+    background-color: $brown;
+  }
+  
+  @include e(heading) {
+    color: $white;
+    font-size: 18px;
+  }
+
+  @include e(card) {
+    margin-top: 25px;
+    display: flex;
+    justify-content: start;
+  }
+
+  @include e(icon) {
+    @include m(left) {
+      width: 22px;
+    }
+  }
+
+  @include e(text) {
+    margin-left: 14px;
+    text-align: left;
+  }
+
+  @include e(title) {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  @include e(desc) {
+    color: rgba($white, 0.5);
+    font-size: 9px;
+    line-height: 1.57;
+    margin-top: 10px;
+  }
+
+  @include e(button) {
+    margin: 35px 0px;
+  }
+
+  @include e(ninja-icon) {
+    width: 24px;
+  }
+
+  @include mq(xs) {
+    
+    @include e(body) {
+      padding: 0px 45px;
+    }
+
+    @include e(heading) {
+      font-size: 23px;
+    }
+  }
+
+  @include mq(md) {
+
+    @include e(body) {
+      padding: 0px;
+    }
+
+    @include e(card) {
+      display: inline-flex;
+      width: 30%;
+      padding: 10px;
+    }
+  }
+
+  @include mq(lg) {
+
+    @include e(container) {
+      padding-top: 85px;
+    }
+
+    @include e(body) {
+      padding: 40px 70px 30px 70px;
+    }
+
+    @include e(heading) {
+      font-size: 30px;
+    }
+
+    @include e(ninja-icon) {
+      width: 40px;
+    }
+
+    @include e(button) {
+      margin: 70px 0px;
+    }
+
+    @include e(title) {
+      font-size: 11px;
+    }
+  
+    @include e(desc) {
+      font-size: 10px;
+    }
+  }
+
+  @include mq(xl) {
+
+    @include e(container) {
+      padding-top: 115px;
+    }
+
+    @include e(card) {
+      width: 33%;
+      padding: 10px 0px;
+    }
+
+    @include e(title) {
+      font-size: 12px;
+    }
+  
+    @include e(desc) {
+      font-size: 11px;
+    }
+
+    @include e(body) {
+      padding: 40px 220px 30px 220px;
+    }
+  }
+
+  @include mq(xxl) {
+
+    @include e(heading) {
+      font-size: 40px;
+    }
+
+    @include e(card) {
+      width: 20%;
+      padding-right: 100px;
+      &:nth-child(3n) {
+        padding-right: 0px;
+      }
+    }
+
+    @include e(title) {
+      font-size: 14px;
+    }
+  
+    @include e(desc) {
+      font-size: 14px;
+    }
+  }
+}
